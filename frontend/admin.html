@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Portal</title>
+    <style>
+        body { font-family: Arial; background: #fff0f5; text-align: center; }
+        h1 { color: #ff1493; }
+        form { margin: 20px auto; padding: 20px; background: #ffe6f0; border-radius: 10px; width: 300px; }
+        input, button { margin: 5px; padding: 10px; width: 90%; border-radius: 5px; border: 1px solid #ccc; }
+        button { background: #ff1493; color: white; cursor: pointer; }
+        button:hover { background: #d01470; }
+    </style>
+</head>
+<body>
+    <h1>Admin Portal</h1>
+
+    <h2>Create New Event</h2>
+    <form action="/create-event" method="post">
+        <input type="text" name="name" placeholder="Event Name" required>
+        <input type="text" name="description" placeholder="Description" required>
+        <input type="date" name="date" required>
+        <button type="submit">Create Event</button>
+    </form>
+
+</body>
+</html>
